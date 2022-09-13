@@ -26,13 +26,13 @@ body {
   content: "";
   position: absolute;
   top: -95px;
-  left: 33px;
-  height: 183px;
-  width: 183.5px;
-  background: #ff9100;
-  transform: rotate(45deg);
-  border-top: 10px solid #ff9100;
-  border-left: 10px solid #ff9100;
+  left: -75px;
+  width: 0;
+  height: 0;
+  background: black;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 100px solid #ff9100;
   z-index: 2;
 }
 .house::after {
@@ -43,11 +43,11 @@ body {
   height: 70px;
   width: 30px;
   background: #ff9100;
-  z-index: 1;
+  z-index: 199;
 }
 .window {
   top: 35px;
-  left: 25px;
+  left: 16px;
   height: 80px;
   width: 70px;
   background: #ff9100;
@@ -56,7 +56,7 @@ body {
 }
 .window2 {
   top: 35px;
-  left: 190px;
+  left: 175px;
   height: 80px;
   width: 70px;
   background: #ff9100;
@@ -73,13 +73,16 @@ body {
   min-width: 100%;
   min-height: 48%;
   overflow: hidden;
+  top: 0px;
+  position: relative;
 }
 
 .flex-item {
   background-color: black;
-  padding: 1%;
+  margin: 7%;
   width: 45%;
-  height: 90%;
+  min-height: 90%;
+  position: relative;
 }
 
 .door {
